@@ -1,1 +1,1 @@
-web: gunicorn ifoodifpi.wsgi --log-file -
+web: gunicorn Taxi_ride.wsgi --log-file -
