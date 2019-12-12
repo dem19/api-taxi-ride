@@ -17,7 +17,7 @@ class CadTaxista(models.Model):
     telefone = models.CharField(max_length=16)
     RG = models.CharField(max_length=9)
     CPF = models.CharField(max_length=14)
-    CNH_profissional = models.CharField()
+    CNH_profissional = models.CharField(max_length=100)
     placa = models.CharField(max_length=100)
     cor_moto = models.CharField(max_length=100)
 
