@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class EmpTaxi(models.Model):
     nome_empresa = models.CharField(max_length=100)
@@ -9,6 +9,8 @@ class EmpTaxi(models.Model):
         return self.nome_empresa
 
 class CadTaxista(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    email = models.EmailField(max_length=60)
     Nfuncionario = models.CharField(max_length=100)
     Nempresa = models.ForeignKey(EmpTaxi, on_delete=models.CASCADE)
     bairro = models.CharField(max_length=100)
