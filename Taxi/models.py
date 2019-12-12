@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class EmpTaxi(models.Model):
     nome_empresa = models.CharField(max_length=100)
     CNPJ = models.CharField(max_length=100)

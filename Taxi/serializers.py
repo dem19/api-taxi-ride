@@ -1,9 +1,1 @@
 from rest_framework import serializers
-from .models import CadTaxista
-
-
-class CadastrarTaxista(serializers.ModelSerializer):
-    class Meta:
-        model = CadTaxista
-        fields = '__all__'
-
